@@ -1,0 +1,34 @@
+﻿<section>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <button data-bind="click: loadMonthExpenses, css: { 'btn-primary': period()=='month' }"
+                    type="button" class="btn btn-default">
+                Month
+            </button>
+            <button data-bind="click: loadWeekExpenses, css: { 'btn-primary': period()=='week' }"
+                    type="button" class="btn btn-default">
+                Week
+            </button>
+            <button data-bind="click: loadTodayExpenses, css: { 'btn-primary': period()=='today' }"
+                    type="button" class="btn  btn-default">
+                Today
+            </button>
+            <button type="button" class="btn btn-default">Custom...</button>
+        </div>
+        <div class="panel-body">
+            <ul data-bind="foreach: expenses">
+                <li>
+                    <span data-bind="text: $data.formatedDate"></span>
+                    <span data-bind="visible: $data.formatedDate"> - </span>
+                    <a data-bind="text: $data.description, attr: {href: '/#details/' + _id}"></a>
+                    <span>:</span>
+                    <span data-bind="text: $data.amount"></span>
+                    <span>€</span>
+
+                </li>
+            </ul>
+            <div data-bind="visible: expenses().length < 1">No expenses found...</div>
+            <div><a href="#" data-bind="click: loadMore, visible: more">Load more...</a></div>
+        </div>
+    </div>
+</section>
