@@ -23,7 +23,7 @@ Install Instructions (for windows environments):
 - create the data directory, to contain the mongo database files
 
 ``` bat
-    cd data
+    md data
 ```
 
 - start the mongo server typing the following command 
