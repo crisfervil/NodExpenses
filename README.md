@@ -10,23 +10,33 @@ Install Instructions (for windows environments):
 
 - open a command prompt and change dir to the path used: 
 
+``` bat
     cd c:\users\crisfervil\desktop\nodexpenses
+```
 
 - install project dependencies, typing
 
+``` bat
     npm install
+```
 
 - create the data directory, to contain the mongo database files
 
+``` bat
     cd data
+```
 
 - start the mongo server typing the following command 
 
-    mongodb --dbpath data
+``` bat
+    mongod --dbpath data
+```
 
 - Start the node application
 
+``` bat
   npm start
+```
   
 - Open your prefered browser using the following url
 
