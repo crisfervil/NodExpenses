@@ -43,6 +43,6 @@ start the node application
 npm start
 ```
   
-Open your prefered browser and navigate to localhost and port 3000
+Open your preferred browser and navigate to localhost on port 3000
 
 [http://localhost:3000](http://localhost:3000)
