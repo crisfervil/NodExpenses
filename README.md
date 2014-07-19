@@ -38,6 +38,6 @@ Install Instructions (for windows environments):
   npm start
 ```
   
-- Open your prefered browser using the following url
+- Open your prefered browser using the localhost and port 3000
 
   http://localhost:3000
