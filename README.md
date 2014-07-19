@@ -19,30 +19,30 @@ change dir to the path previously used to clone the project
 cd c:\users\crisfervil\desktop\nodexpenses
 ```
 
-- install project dependencies, typing
+install project dependencies, typing
 
 ``` bat
 npm install
 ```
 
-- create the data directory, to contain the mongo database files
+create the data directory, to contain the mongo database files
 
 ``` bat
 md data
 ```
 
-- start the mongo server typing the following command 
+start the mongo server typing the following command 
 
 ``` bat
 mongod --dbpath data
 ```
 
-- Start the node application
+start the node application
 
 ``` bat
 npm start
 ```
   
-- Open your prefered browser using the localhost and port 3000
+Open your prefered browser and navigate to localhost and port 3000
 
 [http://localhost:3000](http://localhost:3000)
