@@ -1,7 +1,7 @@
 NodExpenses
 ===========
 
-Application for expenses tracking, created using Node.js, Express, MongoDB, Durandal and Knockout
+Application for expenses tracking, created using Node.js, Express, MongoDB, Durandal, Knockout and Bootstrap
 
 
 Install Instructions (for windows environments)
