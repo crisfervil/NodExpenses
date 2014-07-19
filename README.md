@@ -7,13 +7,13 @@ Application for expenses tracking, created using Node.js, Express, MongoDB, Dura
 Install Instructions (for windows environments)
 ===============================================
 
-- clone the git repository to a local directory
+clone the git repository to a local directory
 
 ``` bat
 git clone https://github.com/crisfervil/NodExpenses.git C:\Users\crisfervil\Desktop\NodExpenses
 ```
 
-- change dir to the path used: 
+change dir to the path previously used to clone the project
 
 ``` bat
 cd c:\users\crisfervil\desktop\nodexpenses
