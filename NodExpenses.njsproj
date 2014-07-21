@@ -80,6 +80,7 @@
     <Content Include="public\lib\font-awesome\font\fontawesome-webfont.woff" />
     <Content Include="public\lib\font-awesome\font\FontAwesome.otf" />
     <Content Include="public\lib\jquery\jquery-1.9.1.min.map" />
+    <Content Include="README.md" />
     <Content Include="views\error.jade" />
     <Content Include="views\layout.jade" />
   </ItemGroup>

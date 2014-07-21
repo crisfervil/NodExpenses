@@ -22,7 +22,7 @@ Install Instructions (for windows environments):
 
 - start the mongo server typing the following command 
 
-    mongodb --dbpath data
+    mongod --dbpath data
 
 - Start the node application
 
