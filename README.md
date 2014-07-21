@@ -1,33 +1,48 @@
 NodExpenses
 ===========
 
-Application for expenses tracking, created using Node.js
+Application for expenses tracking, created using Node.js, Express, MongoDB, Durandal, Knockout and Bootstrap
 
 
-Install Instructions (for windows environments):
+Install Instructions (for windows environments)
+===============================================
 
-- clone the git repository to a local directory
+clone the git repository to a local directory
 
-- open a command prompt and change dir to the path used: 
+``` bat
+git clone https://github.com/crisfervil/NodExpenses.git C:\Users\crisfervil\Desktop\NodExpenses
+```
 
-    cd c:\users\crisfervil\desktop\nodexpenses
+change dir to the path previously used to clone the project
 
-- install project dependencies, typing
+``` bat
+cd c:\users\crisfervil\desktop\nodexpenses
+```
 
-    npm install
+install project dependencies, typing
 
-- create the data directory, to contain the mongo database files
+``` bat
+npm install
+```
 
-    cd data
+create the data directory, to contain the mongo database files
 
-- start the mongo server typing the following command 
+``` bat
+md data
+```
 
-    mongod --dbpath data
+start the mongo server typing the following command 
 
-- Start the node application
+``` bat
+mongod --dbpath data
+```
 
-  npm start
+start the node application
+
+``` bat
+npm start
+```
   
-- Open your prefered browser using the following url
+Open your preferred browser and navigate to localhost on port 3000
 
-  http://localhost:3000
+[http://localhost:3000](http://localhost:3000)
