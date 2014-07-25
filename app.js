@@ -1,16 +1,21 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('static-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+var express         = require('express');
+var app             = express();
+var path            = require('path');
+var favicon         = require('static-favicon');
+var logger          = require('morgan');
+var cookieParser    = require('cookie-parser');
+var bodyParser      = require('body-parser');
 
-var expenses = require('./routes/expenses');
+var conf = require('./app/config/app_conf');
 
-var app = express();
+var expenses = require('./app/routes/expenses');
+
+var port = conf.port || process.env.PORT;
+
+app.listen(port);
 
     // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'app/views'));
 app.set('view engine', 'jade');
 app.set("jsonp callback", true);
 
@@ -21,18 +26,12 @@ app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-    // Database
-var mongo = require('mongodb');
-var monk = require('monk');
-var db = monk('localhost/NodExpenses');
+// Database
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://' + conf.db);
 
-    // Make our db accessible to our router
-app.use(function (req, res, next) {
-    req.db = db;
-    next();
-});
 
-    // Routes
+// Routes
 app.use('/expenses', expenses);
 
     /// catch 404 and forward to error handler

@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start_mongodb":"mongod --dbpath mongodb/data",
+    "load_data": "mongo NodExpenses mongodb/load_expenses.js",
+    "start": "node app.js server"
   },
   "dependencies": {
     "express": "~4.2.0",
@@ -13,7 +15,6 @@
     "body-parser": "~1.0.0",
     "debug": "~0.7.4",
     "jade": "*",
-    "mongodb": "*",
-    "monk": "*"
+    "mongoose": "~3.8.13"
   }
 }
